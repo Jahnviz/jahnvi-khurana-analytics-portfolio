@@ -1,0 +1,192 @@
+/* 1. Global Reset and Font Setup */
+body {
+    /* Using a clean, modern font stack */
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Very light, clean background */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 2. Layout Structure */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Deeper shadow for premium feel */
+    border-radius: 12px; 
+}
+
+.section {
+    padding: 20px 0;
+    margin-bottom: 0;
+}
+
+/* 3. Header Styling - Deep Navy Base */
+.header {
+    background-color: #2c3a4f; /* Deep, professional Navy */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 30px; 
+}
+
+/* Photo Fix: Use 'contain' to ensure the entire image is visible, no cropping */
+.profile-pic {
+    width: 130px; /* Slightly larger image */
+    height: 130px;
+    border-radius: 50%; 
+    border: 5px solid #ff6f61; /* Vibrant Rose Gold/Coral border */
+    object-fit: contain; /* FIX: Ensures the whole picture is visible */
+    background-color: white; 
+    box-shadow: 0 0 15px rgba(255, 111, 97, 0.4); /* Soft glow effect */
+}
+
+.header-content {
+    text-align: left; 
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.8em;
+    letter-spacing: 1px;
+}
+
+.header .title {
+    font-size: 1.3em;
+    color: #b0c4de; 
+    margin-bottom: 15px;
+    font-weight: 400; 
+}
+
+.contact-info {
+    margin-top: 10px;
+    font-size: 0.95em;
+}
+
+/* Accent color for contact links */
+.contact-info a {
+    color: #ff6f61; /* Rose Gold/Coral Accent */
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 15px;
+    transition: color 0.2s;
+}
+
+.contact-info a:hover {
+    color: #dc3545;
+}
+
+.resume-link {
+    background-color: #dc3545; /* Standard Red for the key action */
+    padding: 5px 10px;
+    border-radius: 6px;
+    color: white !important;
+    font-size: 0.85em;
+}
+
+/* 4. Headings and Text */
+h2 {
+    color: #2c3a4f; 
+    border-bottom: 3px solid #ff6f61; /* Accent underline */
+    padding-bottom: 8px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+h3 {
+    color: #007bff; /* Standard Blue for Project/Job Titles */
+    margin-bottom: 5px;
+}
+
+/* 5. Experience and Project Entries */
+.job-entry, .project-entry {
+    margin-bottom: 30px;
+    padding-left: 15px;
+    border-left: 4px solid #ff6f61; /* Accent line for entries */
+    border-radius: 0 0 0 8px; /* Subtle curved corner at the bottom */
+}
+
+.duration {
+    font-style: italic;
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 0;
+}
+
+ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+/* 6. Project Button Styling */
+.links-group {
+    display: flex;
+    gap: 10px; 
+    margin-top: 15px;
+}
+
+.button {
+    background-color: #007bff; /* Primary Data Science Blue */
+    color: white;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s, transform 0.1s;
+    font-weight: 600;
+    box-shadow: 0 2px 5px rgba(0, 123, 255, 0.3);
+}
+
+.button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* 7. Certifications Display */
+.certifications-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.cert-link {
+    padding: 8px 14px;
+    border-radius: 25px; /* Pill-shaped buttons */
+    font-size: 0.85em;
+    font-weight: 600;
+    white-space: nowrap; 
+    background-color: #f7d5d2; /* Very light, soft pink/coral background */
+    color: #2c3a4f;
+    text-decoration: none;
+    border: 1px solid #ff6f61;
+    transition: background-color 0.2s;
+}
+
+.cert-link:hover {
+    background-color: #ff6f61;
+    color: white;
+}
+
+/* 8. Achievement Link Styling */
+.achievement-link {
+    font-size: 0.9em;
+    font-weight: 600;
+    color: #dc3545; /* Red accent for visibility */
+    text-decoration: none;
+    margin-left: 5px;
+    transition: color 0.2s;
+}
+
+.achievement-link:hover {
+    text-decoration: underline;
+    color: #c0392b;
+}
+
+/*
